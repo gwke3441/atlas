@@ -2,22 +2,22 @@ h1, h2 {
 color: rgb(255, 57, 146);
 }
 p {
-color: gray;
+color: rgb(54, 0, 85);
 }
 ul {
-border: 3px solid orange;
+border: 3px solid rgb(115, 255, 208);
 }
 ol {
 border: 1px solid rgb(255, 75, 165);
 }
 
 ol, ul {
-padding: 5px 20px;
-border-radius: 4px;
+padding: 1px 30px;
+border-radius: 1px;
 }
 h1, strong {
-color: purple;
+color: rgb(96, 138, 255);
 }
 em {
-color: gray;
+color: rgb(193, 121, 121);
 }
