@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  width: 70%;
+  width: 90%;
   min-width: 800px;
   margin: 0 auto;
 }
@@ -156,8 +156,6 @@ main {
 .flex-container {
   background-color: rgba(0, 255, 0, 0.5); padding: 1%;
   padding: 1%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 
