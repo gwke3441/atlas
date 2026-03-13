@@ -112,11 +112,11 @@ nav a, nav span {
 
 /* || main layout */
 
-/* original main style
+
 main {
   display: flex;
 } 
- */
+ 
 
 article, section {
   flex: 4;
