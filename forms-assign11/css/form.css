@@ -13,6 +13,7 @@ text-align: right; /* width will not work for “inline” elements such as
 
 #formcol1 li {
 	list-style:none;
+	margin-bottom: 5px;
 }
 
 #wrapper {
@@ -25,11 +26,24 @@ div#formcol1 {
 	width: 100%;
 }
 
+legend {
+    text-align: center;
+}
+
+#formcol1 ul {
+	width: 420px;
+	margin: 0 auto;
+}
+
 .instructions {
 	border: 3px solid #6A3D2F;
 	padding: 4px;
 	font-size: 1em;
 	margin-bottom: 1em;
+}
+
+#multchoice {
+	text-align: center;
 }
 
 #multchoice label {
@@ -39,7 +53,7 @@ div#formcol1 {
 }
 
 #multchoice p {
-	margin-left: 40px;
+	margin-left: 0px;
 }
 
 #multchoice span {
