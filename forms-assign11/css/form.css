@@ -6,7 +6,8 @@ label {
 margin-right: .3em;
 width: 6.3em; /* I made this deliberately wide – come up with your own
 optimal width */
-display: inline-block; /* width will not work for “inline” elements such as
+display: inline-block;
+text-align: right; /* width will not work for “inline” elements such as
 “label”. Therefore we need to set it to “inline-block” */
 }
 
@@ -15,8 +16,8 @@ display: inline-block; /* width will not work for “inline” elements such as
 }
 
 #wrapper {
-	width: 60%;
-	margin-left:4%;
+	width: 700px;
+	margin: 0 auto;
 }
 
 div#formcol1 {
@@ -24,7 +25,51 @@ div#formcol1 {
 	width: 100%;
 }
 
+.instructions {
+	border: 3px solid #6A3D2F;
+	padding: 4px;
+	font-size: 1em;
+	margin-bottom: 1em;
+}
 
+#multchoice label {
+	width: auto;
+	display: inline;
+	margin-right: 4;
+}
+
+#multchoice p {
+	margin-left: 40px;
+}
+
+#multchoice span {
+	display: inline-block;
+	margin-left: 3px;
+	margin-right: 6px;
+}
+
+fieldset {
+	border: 2px solid black;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+legend {
+	font-weight: bold;
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label,
+input:active + label, label[for]:focus, label[for]:active {
+color: #FFF !important;
+background-color: #6A3D2F !important;}
+
+#formcol1 input.reqfield {
+	background:#FF9;
+}
+
+h1 {
+	text-align: center;
+}
 
 /* end of form css */
 	
