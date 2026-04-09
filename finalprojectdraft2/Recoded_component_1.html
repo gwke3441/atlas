@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corrected Shop Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background: #f6f1ea;
+      color: #222;
+    }
+
+    .wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #d4ccc2;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 18px;
+      text-align: center;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.3rem;
+    }
+
+    .card a {
+      color: #4a2e1f;
+      font-weight: bold;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .card a:hover,
+    .card a:focus {
+      outline: 3px solid #b8864a;
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrapper">
+    <h1>Corrected Shop Cards</h1>
+
+    <section class="card-grid" aria-label="Shop categories">
+      <article class="card">
+        <img src="" alt="Bags of roasted coffee on display">
+        <div class="card-content">
+          <h2>Coffee</h2>
+          <a href="coffee.html">Browse all coffees →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/merch.jpg" alt="OZO branded mug and apparel">
+        <div class="card-content">
+          <h2>Merch</h2>
+          <a href="merch.html">Browse all merch →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/subscriptions.jpg" alt="Coffee subscription package with coffee bags">
+        <div class="card-content">
+          <h2>Subscriptions</h2>
+          <a href="subscriptions.html">Browse all subscriptions →</a>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
