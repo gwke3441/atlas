@@ -42,6 +42,10 @@
       display: block;
     }
 
+    .card > a {
+    display: block;
+    }
+
     .card-content {
       padding: 18px;
       text-align: center;
@@ -64,6 +68,46 @@
       outline: 3px solid #b8864a;
       outline-offset: 3px;
     }
+
+    .card-link {
+    display: block;
+    color: #4a2e1f;
+    text-decoration: none;
+    }
+
+    .card-link span {
+      font-weight: bold;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .card-link:hover,
+    .card-link:focus {
+      outline: 3px solid #b8864a;
+      outline-offset: 3px;
+    }
+
+    .card {
+  background: white;
+  border: 1px solid #d4ccc2;
+  overflow: hidden;
+}
+
+.card-link {
+  display: block;
+  color: #4a2e1f;
+  text-decoration: none;
+}
+
+.card-link span {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.card:focus-within {
+  box-shadow: 0 0 0 3px #b8864a;
+}
   </style>
 </head>
 <body>
@@ -72,29 +116,51 @@
 
     <section class="card-grid" aria-label="Shop categories">
       <article class="card">
-        <img src="" alt="Bags of roasted coffee on display">
-        <div class="card-content">
-          <h2>Coffee</h2>
-          <a href="coffee.html">Browse all coffees →</a>
-        </div>
+        <a class="card-link" href="https://ozocoffee.com/collections/all-coffee">
+    <img src="specialty-coffee.webp" alt="Bag of roasted coffee">
+    <div class="card-content">
+      <h2>Coffee</h2>
+      <span>Browse all coffees →</span>
+    </div>
+    </a>
       </article>
 
       <article class="card">
-        <img src="images/merch.jpg" alt="OZO branded mug and apparel">
+        <a class="card-link" href="https://ozocoffee.com/collections/apparel">
+        <img src="ozo-merch.jpg" alt="OZO beanies">
         <div class="card-content">
           <h2>Merch</h2>
-          <a href="merch.html">Browse all merch →</a>
+          <span>Browse all merch →</span>
         </div>
+      </a>
       </article>
 
       <article class="card">
-        <img src="images/subscriptions.jpg" alt="Coffee subscription package with coffee bags">
+        <a class="card-link" href="https://ozocoffee.com/collections/subscriptions">
+        <img src="subscriptions.webp" alt="Pair of roasted coffees">
         <div class="card-content">
           <h2>Subscriptions</h2>
-          <a href="subscriptions.html">Browse all subscriptions →</a>
+          <span>Browse all subscriptions →</span>
         </div>
+        </a>
       </article>
     </section>
+    <section class="component-note" aria-labelledby="component-note-heading">
+  <h2 id="component-note-heading">What was fixed</h2>
+  <p>
+    The recoded shop component addresses similar link text found on Ozo's "Collections" page, (found while visiting their 'Our Story' page), 
+    which lessens the amount of cards that are shown on the page, while also adding more clear text as to what the user is visiting when they
+    click the link and many of these cards end up going to the same place, so this keeps the page from having redundant information, as really 
+    all there needs to be are 3-4 or 5 different cards, as the amount that there is on the page can overwhelm the user and as 
+    said before, already a lot of those different cards lead to similar (or the same) places. 
+  </p>
+  <p>
+    Original reference page:
+    <a href="https://ozocoffee.com/collections">
+      Ozo's Collection Page
+    </a>
+  </p>
+</section>
   </main>
 </body>
 </html>
